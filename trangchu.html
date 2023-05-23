@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Việc làm Sinh viên</title>
+        <link rel="shortcut icon" href="image/logo_new-removebg.png">
+        <link rel="stylesheet" href="CSS/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body onload="showusername(); showpost();">
+        <header>
+            <div class="header-top">
+                <a href=""><img src="image/logonew-removebg-preview.png" alt=""></a>
+                <nav>
+                    <a href="trangchu.html">Home</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="signup.html">Sign up</a>
+                    <a href="login.html">Sign in</a>
+                </nav>
+                <div class="header-search">
+                    <input type="search" placeholder="Search" class="header-search-input">
+                    <button class="header-search-button">Search</button>
+                </div>
+                <div class="header-user">
+                    <div><img src="/image/bg-sign-up.webp" alt="" id="avatar"></div>
+                    <button onclick="show_menu_usr()" id="username">Username</button>
+                </div>
+                <div id="logout">
+                    <div style="background-color: #ffffff; border: 3px solid black; text-align: center;" >
+                        <button onclick="linkcart()">Cart</button>
+                    </div>
+                        <button onclick="logout()">Logout<i class="fas fa-sign-out-alt"></i></button>
+                    </div>
+                </div>
+            <!-- <iframe src="login.html" frameborder="0" height="200px" width="300px"></iframe> -->
+            <div style="display: inline-flex;">
+                <div class="header-div-left">
+                    <h1>HELLO, FRIEND!</h1>
+                    <h1>REGISTER NOW FOR OUR AWARD-WINNING SERVICE AND GET A 14 DAY FREE TRIAL.</h1>
+                    <a href="dangky.html">Register Now</a>
+                    <ul>
+                        <li style="list-style: none; margin-right: 31px; padding: 0px 10px;">
+                            <a href="" class="fa fa-facebook" style=" padding: 5px 10px;"></a>
+                            <a href="" class="fa fa-instagram" style=" padding: 5px 10px;"></a>
+                            <a href="" class="fa fa-twitter" style=" padding: 5px 10px;"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-div-right">
+                    <img src="image/Home_sticker-removebg-preview.png" alt="">
+                    <ul>
+                        <li>
+                            <a href="">Google Play</a>
+                            <a href="">Appstrore</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="hiring">
+                <div>
+                    <img src="image/paying-job-sixteen_nine.webp" alt="">
+                    <div class="hiring-div">
+                        <a href="jobs.html">Việc làm</a>
+                        <p>Hàng nghìn việc làm. Thỏa sức lựa chọn</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="image/9-recettes-de-CV-722x361.jpeg" alt="">
+                    <div class="hiring-div">
+                        <a href="CV.html">Tạo CV</a>
+                        <p>Tạo CV thật ấn tượng thu hút nhà tuyển dụng</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="image/send-email-1024x512.png" alt="">
+                    <div class="hiring-div">
+                        <a href="#" onclick="checktuyendung()">Đăng tin tuyển dụng</a>
+                        <p>Tìm kiếm những nhân viên phù hợp với doanh nghiệp, cửa hàng của bạn</p>
+                    </div>
+                </div>
+            </section>
+            <div>
+                <a href="jobs.html" style="margin: 60px 650px;">OUR JOBS</a>
+            </div>
+            <section id="jobs" class="jobs">
+                <div class="jobs-container">
+                    <div class="jobs-img">
+                        <img src="image/cay-rang-implant-lac-viet-intech.jpg" alt="">
+                        <div>
+                            <a href="NhaKhoaLV.html">XEM CHI TIẾT</a>
+                        </div>
+                    </div>
+                    <div class="job-content">
+                        <a href="NhaKhoaLV.html">Nha khoa Lạc Việt Intech tuyển sale lương 20 triệu</a>
+                        <p>
+                        YÊU CẦU
+                        - Tốt nghiệp THPT trở lên
+                        - T uổi từ 18 – 25 t uổi; Có thể làm việc xoay ca
+                        - Không yêu cầu kinh nghiệm, sẽ được đào tạo...</p>
+                        <ul>
+                            <li>
+                                <p style="color: #8F43EE;"><i class="fas fa-money-bill-wave"></i> 5-20 triệu</p>
+                                <p style="color: #FFB84C;"><i class="fas fa-map-marker-alt"></i> Ninh Kiều, Cần Thơ</p>
+                                <p style="color: #7DB9B6;"><i class="fas fa-eye"></i> 28 lượt</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="jobs-container">
+                    <div class="jobs-img">
+                        <img src="image/Tra_sua_IKigai-90435.jpg" alt="">
+                        <div>
+                            <a href="">XEM CHI TIẾT</a>
+                        </div>
+                    </div>
+                    <div class="job-content">
+                        <a href="">TRÀ SỮA IKIGAI - CẦN THƠ TUYỂN DỤNG KẾ TOÁN KHO</a>
+                        <p>Từ 20T trở lên
+                        - Không yêu cầu kinh nghiệm (có kinh nghiệm là một lợi thế) Làm việc từ thứ 2-thứ 7, 8h-17h, nghỉ trưa 1 tiếng (12h-13h)...</p>
+                        <ul>
+                            <li>
+                                <p style="color: #8F43EE;"><i class="fas fa-money-bill-wave"></i> 5-7 triệu</p>
+                                <p style="color: #FFB84C;"><i class="fas fa-map-marker-alt"></i> Bình Thủy, Cần Thơ</p>
+                                <p style="color: #7DB9B6;"><i class="fas fa-eye"></i> 110 lượt</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="jobs-container">
+                    <div class="jobs-img">
+                        <img src="image/mqdefault.jpg" alt="">
+                        <div>
+                            <a href="">XEM CHI TIẾT</a>
+                        </div>
+                    </div>
+                    <div class="job-content">
+                        <a href="" id="1">SIXDO CẦN THƠ
+                        TUYỂN NHÂN VIÊN BÁN HÀNG</a>
+                        <p id="2">- Hoàn thành chỉ tiêu về doanh số được giao.
+                        - Đảm bảo chất lượng dịch vụ khách hàng.
+                        - Đảm bảo duy trì hình ảnh, trưng bày hàng hóa...</p>
+                        <ul>
+                            <li>
+                                <p style="color: #8F43EE;"><i class="fas fa-money-bill-wave"></i> 6-8 triệu</p>
+                                <p style="color: #FFB84C;"><i class="fas fa-map-marker-alt"></i> Cái Răng, Cần Thơ</p>
+                                <p style="color: #7DB9B6;"><i class="fas fa-eye"></i> 60 lượt</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="jobs-container">
+                    <div class="jobs-img">
+                        <img src="image/jollibee-1.jpg" alt="">
+                        <div>
+                            <a href="">XEM CHI TIẾT</a>
+                        </div>
+                    </div>
+                    <div class="job-content">
+                        <a href="">JOLLIBEE
+                        TUYỂN NHIỀU VỊ TRÍ</a>
+                        <p>Tốt nghiệp THPT trở lên, độ tuổi từ 18-25 tuổi
+                        - Có trách nhiệm trong công việc
+                        - Làm được các ngày Lễ Tết - Thời gian làm việc xoay ca
+                        - Mức lương ban đầu : 21.000 đ/giờ</p>
+                        <ul>
+                            <li>
+                                <p style="color: #8F43EE;"><i class="fas fa-money-bill-wave"></i> 21K/1h</p>
+                                <p style="color: #FFB84C;"><i class="fas fa-map-marker-alt"></i> Ninh Kiều, Cần Thơ</p>
+                                <p style="color: #7DB9B6;"><i class="fas fa-eye"></i> 20 lượt</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="jobs-more">
+                    <a href="jobs.html"><i class="fas fa-arrow-circle-right"></i></a>
+                </div> -->
+            </section>
+            <section class="IT-jobs">
+                <div>
+                    <a href="" class="IT-left"><img src="image/việc làm IT.jpg" alt=""></a>
+                    <div class="IT-right">
+                        <h1>VIỆC LÀM IT</h1>
+                        <a href=""><i class="fas fa-paper-plane"></i> NỘP CV NGAY</a>
+                        <h2>Các công ty IT ở đây chờ bạn !</h2>
+                    </div>
+                </div>
+            </section>
+            <div class="our-blog">
+                <a href="bloglist.html">OUR BLOGS</a>
+                <a href="">COMMENTS</a>
+            </div>
+            <section class="blog">
+                <div class="blog-container">
+                    <div class="blog-content">
+                        <div class="blog-content-img">
+                            <img src="image/Nhung-sai-lam-khi-nghi-viec-1.jpg" alt="">
+                            <div class="status">
+                                <p><i class="fas fa-thumbs-up"></i> 15</p>
+                                <p><i class="fas fa-thumbs-down"></i> 20</p>
+                                <p><i class="fas fa-eye"></i> 200</p>
+                            </div>
+                        </div>
+                        <div class="blog-content-a">
+                            <a href="blog9_nghiviec.html">Bạn tưởng bạn quan trọng: thực tế khi nghỉ việc chẳng ai nhớ đến bạn đâu</a>
+                            <p>Có một thực tế rất phủ phàng mà không ai muốn nghĩ đến: khi bạn rời xa công việc, đồng nghiệp chẳng nhớ đến bạn như bạn
+                            nghĩ....</p>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        
+                        <div class="blog-content-a">
+                            <a href="">Phàn nàn về công ty hay sếp: bạn phải cẩn thận</a>
+                            <p>Là một nhân viên, chắc hẳn bạn có nhiều điều để than phiền tại công sở. Có rất nhiều thứ khiến bạn không hài lòng: sếp
+                            bạn là người khó tính và có vẻ không công bằng....</p>
+                        </div>
+                        <div class="blog-content-img">
+                            <img src="image/phanan.jpg" alt="">
+                            <div class="status">
+                                <p><i class="fas fa-thumbs-up"></i> 15</p>
+                                <p><i class="fas fa-thumbs-down"></i> 20</p>
+                                <p><i class="fas fa-eye"></i> 200</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-content-img">
+                            <img src="image/tai-sao-khong-tra-lai-ho-so-xin-viec.jpg" alt="">
+                            <div class="status">
+                                <p><i class="fas fa-thumbs-up"></i> 15</p>
+                                <p><i class="fas fa-thumbs-down"></i> 20</p>
+                                <p><i class="fas fa-eye"></i> 200</p>
+                            </div>
+                        </div>
+                        <div class="blog-content-a">
+                            <a href="">Công ty không trả giấy tờ khi người lao động nghỉ việc có thể bị phạt lên tới 20 triệu đồng</a>
+                            <p>Khi nghỉ việc, người lao động thường có nhu cầu lấy lại giấy tờ. Nếu doanh nghiệp không trả giấy tờ sẽ phải chịu mức xử
+                            phạt như thế nào?....</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog-chat">
+                    <div class="chat" id="chat">
+                        <div class="chat-content">
+                            <img src="image/paying-job-sixteen_nine (1).webp" alt="">
+                            <div class="chat-user">
+                                <a href="">Nguyễn Hoàng Kinh Khoa</a>
+                                <p class="start"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></p>
+                                <p>chúc cho VLSV ngày mới tốt đẹp và may mắn ạ</p>
+                            </div>
+                        </div>
+                        <div class="chat-content">
+                            <img src="image/gay.png" alt="">
+                            <div class="chat-user">
+                                <a href="">Phan Gia Bảo</a>
+                                <p class="start"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                </p>
+                                <p>Khóa đào tạo và giới thiệu việc làm cho các bạn định hướng làm IT Comtor - biên phiên dịch tiếng Nhật ngành IT, yêu cầu
+                                nho nhỏ trình độ N2.
+                                Được học cùng GV Nhật-Việt là nhân sự cấp cao tại công ty IT.
+                                Ib mình để hỗ trợ thông tin chi tiết.</p>
+                            </div>
+                        </div>
+                        <div class="chat-content">
+                            <img src="image/jollibee-1.jpg" alt="">
+                            <div class="chat-user">
+                                <a href="">Lưu Hoàng Thái Bảo</a>
+                                <p class="start"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                </p>
+                                <p>Trang web đẹp, thuyệt vời</p>
+                            </div>
+                        </div>
+                        <div class="chat-content">
+                            <img src="image/send-email-1024x512.png" alt="">
+                            <div class="chat-user">
+                                <a href="">Phan Gia Bảo</a>
+                                <p class="start"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+                                </p>
+                                <p>Trang web đẹp, thuyệt vời</p>
+                            </div>
+                        </div>
+                        <div class="chat-content">
+                            <img src="image/DANG-BAI-TUYEN-DUNG-2-removebg-preview.png" alt="">
+                            <div class="chat-user">
+                                <a href="">Phan Gia Bảo</a>
+                                <p class="start"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                        class="far fa-star"></i>
+                                </p>
+                                <p>Trang web đẹp, thuyệt vời</p>
+                            </div>
+                        </div>
+                        <div class="chat-content">
+                            <img src="image/DANG-BAI-TUYEN-DUNG-2-removebg-preview.png" alt="">
+                            <div class="chat-user">
+                                <a href="">Phan Gia Bảo</a>
+                                <p class="start"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                        class="far fa-star"></i>
+                                </p>
+                                <p>Trang web đẹp, thuyệt vời</p>
+                            </div>
+                        </div>
+                        <div class="chat-content">
+                            <img src="image/DANG-BAI-TUYEN-DUNG-2-removebg-preview.png" alt="">
+                            <div class="chat-user">
+                                <a href="">Phan Gia Bảo</a>
+                                <p class="start"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i
+                                        class="far fa-star"></i>
+                                </p>
+                                <p>Trang web đẹp, thuyệt vời</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="typing">
+                        <input type="text" placeholder="Bình Luận" id="binhluan">
+                        <button onclick="comment()"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </section>
+            <section style="margin-bottom: 10px;">
+            <!-- Sử dụng Bootstrap -->
+                <div class="container mt-3">
+                    <h2>Biểu mẫu<ul></ul></h2>
+                    <br>
+                    <!-- Nav pills -->
+                    <ul class="nav nav-pills" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="pill" href="Biểu mẫu/mau-don-xin-viec-viet-tay-chuan.doc"
+                                onclick="downloadFile(event)">Đơn xin việc</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="pill" href="Biểu mẫu/mau-giay-kham-suc-khoe.doc" onclick="downloadFile(event)">Giấy khám sức khỏe</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-top">
+                <div class="footer-top-left">
+                    <a href=""><img src="image/logonew-removebg-preview.png" alt=""></a>
+                    <ul>
+                        <li>
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fab fa-google-plus"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a> 
+                            <a href=""><i class="fab fa-instagram-square"></i></a>
+                            <a href=""><i class="fab fa-tiktok"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-top-center">
+                    <h1>PAGE</h1>
+                    <ul>
+                        <li><a href="trangchu.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">New</a></li>
+                        <li><a href="">Help</a></li>
+                    </ul>
+                </div>
+                <div class="footer-top-center">
+                    <h1>QUICK LINKS</h1>
+                    <ul>
+                        <li><a href="trangchu.html">Home</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">New</a></li>
+                        <li><a href="">Help</a></li>
+                    </ul>
+                </div>
+                <div class="footer-top-right">
+                    <h1>CONTACT US</h1>
+                    <input type="email" placeholder="Email">
+                    <div>
+                        <textarea name="text" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    </div>
+                    <button>Submit</button>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy 2023 vieclamsinhvien.com Theme All Rights Reserved</p>
+            </div>
+        </footer>
+        <script type="text/javascript" src="JS/javascript.js"></script>
+    </body>
+</html>

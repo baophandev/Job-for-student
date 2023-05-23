@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="login-container-top">
+            <a href="trangchu.html"><img src="/image/logonew-removebg-preview.png" alt=""></a>
+            <div>
+                <h1>Sign in to</h1>
+                <h2>Jobs for Student</h2>
+            </div>
+        </div>
+        <div class="login-container-bottom">
+
+        </div>
+        <div class="login-container">
+            <div class="tieude">
+                <div class="tieude-left">
+                    <h2>Welcome to </h2>
+                    <a href="trangchu.html">VLSV</a>
+                </div>
+                <div class="tieude-right">
+                    <p>No acount?</p>
+                    <a href="signup.html">Sign up</a>
+                </div>
+            </div>
+            <h1 style="font-size: 50px; margin-top: 0px;">SIGN IN</h1>
+            <div class="login-google">
+                <div class="google">
+                    <a href=""><i class="fab fa-google"></i> Login with Google</a>
+                </div>
+                <div class="facebook">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                </div>
+                <div class="apple">
+                    <a href=""><i class="fab fa-apple"></i></a>
+                </div>
+            </div>
+            <div class="username">
+                <h3>Enter your username or email address</h3>
+                <input type="email" placeholder="Username or email address" id="email">
+            </div>
+            <div class="password">
+                <h3>Enter your password</h3>
+                <div>
+                    <input type="password" placeholder="Password" id="btnPassword">
+                    <button id="button-eye" onclick="showPassword()"><i class="far fa-eye-slash"></i></button>
+                </div>
+                <a href="">Forgot password</a>
+            </div>
+            <button class="btn" onclick="login()">Login</button>
+        </div>
+    </main>
+    <script type="text/javascript" src="JS/javascript.js"></script>
+</body>
+</html>

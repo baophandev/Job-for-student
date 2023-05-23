@@ -1,0 +1,443 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px;
+}
+
+header{
+    background: linear-gradient(to right, #FEAC5E, #C779D0, #4BC0C8);
+    height: 70px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+nav{
+    padding-top: 20px;
+}
+
+nav>a {
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.login-container-top{
+    background-color: #12c2e9;
+    height: 350px;
+}
+
+.login-container{
+    width: 387px;
+    height: 550px;
+    position: absolute;
+    top: 40px;
+    right: 100px;
+    background-color: white;
+    /* background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px); */
+    box-shadow: 0px 0px 5px gray;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.tieude{
+    display: flex;
+    flex-direction: row;
+}
+
+.tieude-left > a{
+    text-decoration: none;
+    color: #12c2e9;
+    padding: 23px 0px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.tieude-left{
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+}
+
+.tieude-right{
+    color: gray;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+.tieude-right > a{
+    text-decoration: none;
+    color: #12c2e9;
+}
+
+.tieude-right > p{
+    margin: 0px;
+}
+
+.google > a , .facebook>a, .apple > a{
+    text-decoration: none;
+    background-color: rgb(219, 233, 238);
+    color: #12c2e9;
+    padding: 10px 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.facebook > a{
+    padding: 10px 20px;
+}
+
+.apple > a{
+    padding: 10px 20px;
+}
+
+.username{
+    margin-top: 50px;
+}
+
+::placeholder{
+    font-size: 15px;
+    font-weight: 10px;
+}
+
+.username > input{
+    outline: none;
+    border: none;
+    background-color: rgb(219, 233, 238);
+    width: 370px;
+    height: 50px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.password{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.password > a{
+    text-decoration: none;
+    color: rgb(10, 138, 180);
+    margin-left: 263px;
+    margin-top: 5px;
+}
+
+.password > div > input{
+    background-color: rgb(219, 233, 238);
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 325px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.password > div > button{
+    text-decoration: none;
+    background-color: rgb(219, 233, 238);
+    padding: 16px 11px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+}
+
+.login-google{
+    display: flex;
+    flex-direction: row;
+}
+
+.btn{
+    width: 377px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: white;
+    background-color: #12c2e9;
+    outline: none;
+    border: none;
+}
+
+.login-container-top{
+    display: flex;
+    flex-direction: row;
+}
+
+.login-container-top > div{
+    margin: 65px 50px;
+}
+
+.login-container-top > div > h1{
+    color: white;
+    font-size: 50px;
+}
+
+.login-container-top > div > h2{
+    color: white;
+}
+
+.login-container-top > a > img{
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+}
+
+
+
+.login-container{
+    width: 387px;
+    height: 550px;
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    /* background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px); */
+    border-radius: 30px;
+    padding: 20px;
+    border: 0.5px solid #6dd5ed;
+    box-shadow: 1px 1px 1px #6dd5ed;
+}
+
+.login-container > a > img{
+    width: 220px;
+    height: 200px;
+}
+
+.signup-container-top {
+    background-color: #4e51a2;
+    height: 350px;
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
+}
+
+.register-top > input, .register-bottom>input, .register-bottom>button{
+    height: 50px;
+    width: 300px;
+    border-radius: 15px;
+    outline: none;
+    border: 0.5px solid #6dd5ed;
+    font-size: 25px;
+    padding-left: 10px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px gainsboro;
+    color: gray;
+    font-size: 15px;
+}
+
+.register-top {
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.register-bottom{
+    margin-left: 20px;
+}
+
+.register-bottom>button{
+    background-color: #6dd5ed;
+    color: white;
+    width: 305px;
+    box-shadow: 5px 5px 5px gainsboro;
+}
+
+.btn-signin{
+    text-decoration: none;
+    text-align: center;
+    background-color: #6dd5ed;
+    color: white;
+    padding: 13px 100px;
+    border-radius: 10px;
+    margin: 20px 49px;
+}
+
+.btn-signin-gg{
+        text-align: center;
+        background-color: #6dd5ed;
+        color: white;
+        padding: 13px 1px;
+        border-radius: 10px;
+        margin: 40px 49px;
+}
+
+.btn-signin-gg > a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.btn-sign-fb-ap > a{
+    text-align: center;
+    background-color: #6dd5ed;
+    color: white;
+    padding: 13px 64px;
+    border-radius: 10px;
+}
+
+.btn-sign-fb-ap{
+    margin: 0px 48px;
+
+}
+
+/*CV*/
+
+.CV-container{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 433px;
+}
+
+.CV-container-left{
+    width: 300px;
+    height: 550px;
+    background-color: #0ABFBC;
+    padding: 20px;
+}
+
+.CV-container-right{
+    width: 350px;
+    height: 590px;
+    background-color: rgb(245, 239, 239);
+    padding: 0px 20px;
+}
+
+.avata{
+    width: 200px;
+    height: 200px;
+    border: 0.1px solid gray;
+    border-radius: 100px;
+    background-color: white;
+    margin-left: 45px;
+}
+
+.avata > input{
+    margin-top: 90px;
+}
+
+.CV-Username > input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 0.1px solid rgb(255, 255, 255);
+    text-align: center;
+    color: white;
+    outline: none;
+    margin-left: 60px;
+}
+
+.CV-user-detail > div{
+    display: flex;
+    flex-direction: row;
+    height: 25px;
+    margin-left: 20px;
+}
+
+.CV-user-detail div input, .skill div input{
+    height: 20px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    border-bottom: 0.1px solid white;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.CV-user-detail div p{
+    padding: 0px 10px;
+    color: white;
+}
+
+.skill div input{
+    margin-top: 0px;
+    margin-left: 60px;
+}
+
+
+
+.experience-detail, .education{
+    display: flex;
+    flex-direction: row;
+}
+
+.experience-left input{
+    outline: none;
+    font-weight: bold;
+    width: 100px;
+    background-color: transparent;
+    border: none;
+}
+
+.experience-right input{
+    outline: none;
+    width: 200px;
+    background-color: transparent;
+    border: none;
+}
+
+.experience-right textarea{
+    width: 200px;
+    height: 70px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.hiring-container{
+    display: flex;
+    flex-direction: row;
+    border: 0.1px solid gray;
+}
+
+.hiring-container-left{
+    width: 500px;
+    height: 500px;
+    background-color: #12c2e9;
+    border-radius: 0px 200px 200px 0px;
+}
+
+.hiring-container-center{
+    width: 500px;
+    height: 500px;
+    background-color: #eaafc8;
+    border-radius: 0px 200px 200px 0px;
+}
+
+.hiring-container-right{
+    width: 500px;
+    height: 500px;
+    
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* điều chỉnh font-size và margin-top của tiêu đề chính */
+    h1 {
+        font-size: 36px;
+        margin-top: 30px;
+    }
+
+    /* ẩn tiêu đề phụ */
+    h2 {
+        font-size: 16px;
+    }
+
+    /* điều chỉnh kích thước ảnh đại diện */
+    .login-container-top img {
+        max-width: 200px;
+    }
+
+    /* điều chỉnh khoảng cách giữa các phần tử */
+    .login-container {
+        margin-top: 50px;
+    }
+
+    /* ẩn các nút đăng nhập bằng Google, Facebook và Apple */
+    .login-google {
+        display: none;
+    }
+
+    .login-container-top>a>img {
+        width: 80px;
+        height: 80px;
+        margin: 0px;
+    }
+}

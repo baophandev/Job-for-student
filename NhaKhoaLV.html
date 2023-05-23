@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="shortcut icon" href="image/logonew-removebg-preview.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>OURS JOB</title>
+</head>
+<body onload="showusername()">
+    <header style="height: 100px;">
+        <div class="header-top">
+            <a href="trangchu.html"><img src="image/logonew-removebg-preview.png" alt=""></a>
+            <nav>
+                <a href="trangchu.html">Home</a>
+                <a href="">Blog</a>
+                <a href="signup.html">Sign up</a>
+                <a href="login.html">Sign in</a>
+            </nav>
+            <div class="header-search">
+                <input type="search" placeholder="Search" class="header-search-input">
+                <button class="header-search-button">Search</button>
+            </div>
+            <div class="header-user">
+                <div><img src="/image/bg-sign-up.webp" alt="" id="avatar"></div>
+                <button onclick="show_menu_usr()" id="username">Username</button>
+            </div>
+            <div id="logout">
+                <div style="background-color: #ffffff; border: 3px solid black; text-align: center;"><a href=""
+                        style="color: black; text-decoration: none;"><i class="fas fa-user"></i> user</a></div>
+                <button onclick="logout()">Logout<i class="fas fa-sign-out-alt"></i></button>
+            </div>
+        </div>
+    </header>
+    <main class="NKLVdetail">
+        <div  class="NKLVdetail-left">
+            <section>
+                <h1 class="NKLVdetail-h1" style="font-size: 30px; margin-bottom: 30px;">Nha khoa Lạc Việt Intech tuyển sale lương 20 triệu</h1>
+                <div class="container mt-3" style="width: 700px;">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td>Nơi làm việc:</td>
+                                <td>Hà Nội</td>
+                                
+                            </tr>
+                            <tr class="table-primary">
+                                <td>Ngành</td>
+                                <td>Y tế/ Chăm sóc sức khỏe</td>
+                                
+                            </tr>
+                            <tr class="table-success">
+                                <td>Lương:</td>
+                                <td>20.000.000 VND / tháng</td>
+                                
+                            </tr>
+                            <tr class="table-danger">
+                                <td>Mức thưởng:</td>
+                                <td>5,000,000 VND</td>
+                               
+                            </tr>
+                            <tr class="table-info">
+                                <td>Hình thức làm việc:</td>
+                                <td>Toàn thời gian</td>
+                                
+                            </tr>
+                            <tr class="table-warning">
+                                <td>ID công việc:</td>
+                                <td  id="code">67212</td>
+                                
+                            </tr>
+                            <tr class="table-active">
+                                <td>Ngày hết hạn:</td>
+                                <td>26/10/2034</td>
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+            <section>
+                <h1 class="NKLVdetail-h1">Mô tả công việc : </h1>
+                <p>Phát triển mạng lưới khách hàng mới</p>
+                <p>Phát triển kinh doanh theo định hướng và doanh số theo yêu cầu của công ty</p>
+                <p>Phát triển kinh doanh trong lĩnh vực nha khoa</p>
+            </section>
+            <section>
+                <h1 class="NKLVdetail-h1">Yêu cầu công việc:</h1>
+                <p>Chăm chỉ và chuyên cần</p>
+            </section>
+            <section>
+                <h1 class="NKLVdetail-h1">Quyền lợi:</h1>
+                <p>Thu nhập 20 triệu</p>
+                <p>- Thưởng nóng : thưởng cá nhân xuất sắc nhất và nhì tháng, thưởng nhóm xuất sắc nhất tháng, thưởng cá nhân đạt
+                    doanh số 3 tháng liên tiếp.</p>
+                <p>- Cơ hội lên trưởng nhóm, trưởng phòng, Giám đốc Các Chi nhánh.</p>
+            </section>
+            <section>
+                <h1 class="NKLVdetail-h1">Điều kiện nhận thưởng:</h1>
+                <p>Với vị trí đang tuyển dụng này, Nhà Tuyển Dụng đưa ra phần thưởng nhằm khuyến khích các ứng viên nộp đơn. Chi
+                    tiết mức
+                    thưởng như bên trên. Phần thưởng này được trao khi:</p>
+                <p>· Ngay khi được nhận vào vị trí này và đi làm trong tuần đầu tiên</p>
+            </section>
+        </div>
+        <div>
+            <div class="d-grid gap-3" style="width: 300px;">
+                <button type="button" class="btn btn-primary btn-block" style="background-color: orange;">ỨNG TUYỂN NGAY</button>
+                <button type="button" class="btn btn-primary btn-block" id="btn-block" onclick="addcart()"><i class="fas fa-plus"></i> LƯU CÔNG VIỆC</button>
+                <button type="button" class="btn btn-primary btn-block" onclick="jobcart()"><i class="fas fa-database"></i> XEM CÁC CÔNG VIỆC ĐÃ LƯU</button>
+                <button type="button" class="btn btn-primary btn-block"><i class="fas fa-flag"></i> BÁO CÁO CÔNG VIỆC</button>
+                <button type="button" class="btn btn-primary btn-block"><i class="fas fa-share"></i> CHIA SẼ VỚI BẠN BÈ</button>
+            </div>
+            <div class="container mt-3">
+                <h2>Liên Quan</h2>
+                <div class="card" style="width:300px; margin-bottom: 20px;">
+                    <img class="card-img-top" src="image/biti1-1595673438-5937-1595673654.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                        <a href="#" class="btn btn-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+                <div class="card" style="width:300px; ">
+                    <img class="card-img-top" src="image/biti1-1595673438-5937-1595673654.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">John Doe</h4>
+                        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                        <a href="#" class="btn btn-primary">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-top-left">
+                <a href=""><img src="image/logonew-removebg-preview.png" alt=""></a>
+                <ul>
+                    <li>
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-google-plus"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-instagram-square"></i></a>
+                        <a href=""><i class="fab fa-tiktok"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-top-center">
+                <h1>PAGE</h1>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">New</a></li>
+                    <li><a href="">Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-top-center">
+                <h1>QUICK LINKS</h1>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">New</a></li>
+                    <li><a href="">Help</a></li>
+                </ul>
+            </div>
+            <div class="footer-top-right">
+                <h1>CONTACT US</h1>
+                <input type="email" placeholder="Email">
+                <div>
+                    <textarea name="text" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                </div>
+                <button>Submit</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy 2023 vieclamsinhvien.com Theme All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="JS/javascript.js"></script>
+</body>
+</html>
