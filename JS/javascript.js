@@ -66,7 +66,7 @@ function login(){
             localStorage.setItem("username", data.accounts[i].username);
             localStorage.setItem("anh", data.accounts[i].anh);
             localStorage.setItem("page", data.accounts[i].page);
-            window.location.href = "trangchu.html";
+            window.location.href = "index.html";
             return;
         }
     }
@@ -77,7 +77,7 @@ function login(){
 function logout(){
     localStorage.clear();
     alert("Đã đăng xuất!");
-    window.location.href = "trangchu.html"
+    window.location.href = "index.html"
 }
 
 //Hiện tên người dùng đã đăng nhập trên thanh header
@@ -288,7 +288,7 @@ function post(){
 
 
     alert("Bài đã được đăng")
-    window.location.href = "trangchu.html";
+    window.location.href = "index.html";
 }
 
 //SHOW BÀI TUYỂN DỤNG LÊN TRANG CHỦ VÀ TRANG VIỆC LÀM
